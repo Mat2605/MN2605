@@ -1,0 +1,12 @@
+A = []
+B = []
+for i in range(30):
+    a = int(input())
+    A.append(a)
+    B.append(a)
+x = int(input())
+for i in range(30):
+    if A[i] == x:
+        print("A posição ", i, " do vetor vale ", x)
+        i = a
+print(B[a])
