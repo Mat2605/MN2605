@@ -1,0 +1,34 @@
+V = []
+pares, imp, c, p, a, b = 0, 0, 0, 0, 0, 0
+cont1, cont2 = 0, 0
+med, med1 = 0, 0
+for i in range(10):
+    n = int(input())
+    V.append(n)
+    if i == 0:
+        p = a = b = c = V[i]
+    if V[i] % 2 == 0:
+        med += V[i]
+        cont1 += 1
+        if V[i] > p:
+            p = V[i]
+        if i > V[i]:
+            c = V[i]
+    else:
+        med1 += V[i]
+        cont2 += 1
+        if V[i] > a:
+            a = V[i]
+        if b > V[i]:
+            b = V[i]
+for i in range(10):
+    if V[i] % 2 == 0 and V[i] > med:
+        print(V[i], "é maior que a media dos pares")
+    if V[i] % 2 != 0 and V[i] > med1:
+        print(V[i], "é maior do que os impares")
+print("Maior dos pares: ", p)
+print("Menor dos pares: ", c)
+print("Media dos pares: ", med / cont1)
+print("Maior dos impares: ", a)
+print("Menor dos impares: ", b)
+print("Media dos impares:", med1 / cont2)
