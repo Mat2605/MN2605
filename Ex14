@@ -1,0 +1,21 @@
+n = int(input())
+v = [0 for i in range(n)]
+if n > 20:
+    print()
+else:
+    for i in range(n):
+        v[i] = int(input())
+for i in range(n):
+    for j in range(n - 1):
+        if v[i] > v[j]:
+            s = v[i]
+            v[i] = v[j]
+            v[j] = s
+print(v)
+for i in range(n):
+    for j in range(n - 1):
+        if v[i] < v[j]:
+            s = v[i]
+            v[i] = v[j]
+            v[j] = s
+print(v)
