@@ -1,0 +1,7 @@
+V = []
+for i in range(10):
+    n = int(input())
+    V.append(n)
+print(V)
+for i in range(10):
+    print(V[i] / 10)
