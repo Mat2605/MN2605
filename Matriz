@@ -1,0 +1,10 @@
+t1 = 2
+t2 = 2
+mat1 = [[0 for i in range(t1)] for i in range(t2)]
+mat2 = [[0 for i in range(t1)]for i in range(t2)]
+for i in range(t1):
+    for j in range(t2):
+        mat1[i][j] = int(input())
+        mat2[i][j] = mat1[i][j]*3
+print(mat1)
+print(mat2)
