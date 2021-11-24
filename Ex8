@@ -1,9 +1,0 @@
-v = [0 for i in range(10)]
-b = [0 for i in range(10)]
-c = 9
-for i in range(10):
-    v[i] = int(input())
-    b[c] = v[i]
-    c -= 1
-print(v)
-print(b)
