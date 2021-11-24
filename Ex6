@@ -1,5 +1,0 @@
-V = []
-for i in range(30):
-    a = (i + (7 * i)) - (i + 1)
-    V.append(a)
-print(V)
