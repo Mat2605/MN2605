@@ -1,5 +1,0 @@
-V = []
-for i in range(15):
-    for u in range(16):
-        if i % u == 0:
-            print()
